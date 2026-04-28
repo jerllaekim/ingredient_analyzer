@@ -8,9 +8,7 @@ import pandas as pd
 
 # 앱 설정
 st.set_page_config(page_title="Food Product & Law Helper", layout="wide")
-st.title("🍱 식품 정보 및 규정 검색기 (V2)")
-st.info("엑셀(data2/product_list.xlsx)과 PDF(data2/*.pdf) 데이터를 대조하여 답변합니다.")
-
+st.title("🍱 식품 정보 및 규정 검색기")
 API_KEY = st.secrets.get("GEMINI_API_KEY")
 
 # 1. 엑셀 데이터 로드 (폴더명 data2 반영)
